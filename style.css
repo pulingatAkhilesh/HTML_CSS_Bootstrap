@@ -290,13 +290,15 @@
 .footer{
     background-color: #202020;
     height: 400px;
+    padding: 0 140px;
 
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
 .footer .container{
-    margin: 0 140px;
+    box-sizing: border-box;
+    /* margin: 0 140px; */
     padding: 0;
 }
 
@@ -328,7 +330,6 @@
 
 .footer-mid{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     border-bottom: 0.5px solid #323232;
 
@@ -337,4 +338,32 @@
 .fml-newsletter a{
     text-decoration: none;
     color: #0e4788;
+}
+.fm-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid red;
+}
+.fmr-input{
+    background-color: #202020;
+    border: 2px solid #707070;
+    color: #707070;
+    font-size: small;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-right: 5%;
+    padding: 7px 15px;
+    border-radius: 40px;
+}
+.fmr-button-subsc{
+    background-color: #202020;
+    border: 2px solid #707070;
+    color: #0f4d92;
+    font-size: small;
+    font-weight: bold;
+    white-space: nowrap;
+    margin: 0 5%;
+    padding: 7px 25px;
+    border-radius: 40px;
 }
