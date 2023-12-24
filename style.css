@@ -164,6 +164,11 @@
 .future .btn-contact{
     border: 3px solid white;
 }
+.future button:hover{
+    box-shadow: 0 0 2.5px #111111;
+    transition: 1.4s;
+    transform: scale(1.04);
+}
 
 .major-footprints{
     display: flex;
@@ -280,9 +285,6 @@
     display: flex;
     gap: 30px;
 }
-/* .rtc-professionals-child{
-    display: flex;
-} */
 .rtc-pc-details{
     display: flex;
     flex-direction: column;
@@ -299,6 +301,61 @@
 }
 .rtc-pc-details h6{
     color: #ECECEC;
+}
+
+.btn-testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.btn-left, .btn-right{
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+.svg-container {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: none;
+}
+.svg-container svg{
+    background-color: none;
+}
+.arrow-left, .arrow-right{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: none;
+}
+.arrow-left{
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.arrow-right{
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.btn-right{
+    /* Add a negative margin to counter the default space between inline-block elements */
+    margin-left: -5px;
+}
+.btn-left:hover, .btn-right:hover{
+    transition: 1.4s;
+    transform: scale(1.05)
+}
+.svg-left:hover{
+    box-shadow: -1px -1px 2px black;
+}
+.svg-right:hover{
+    box-shadow: 1px 1px 2px grey;
 }
 
 .trust-of-customers{
